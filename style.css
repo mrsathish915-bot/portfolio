@@ -70,9 +70,20 @@ header {
 /* =========================
    HERO
 ========================= */
+.hero-content {
+    max-width: 850px;
+}
 
-.hero {
-    min-height: 90vh;
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
 
     display: flex;
     justify-content: center;
