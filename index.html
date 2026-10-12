@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>M R SATHISH | Portfolio</title>
+
+    <meta name="description"
+        content="M R Sathish's personal portfolio showcasing skills, projects, coding profiles and contact information.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,13 +40,23 @@
     <!-- ================= HOME ================= -->
 
     <section id="home" class="hero">
- <div class="hero-content">
 
-    <img src="profile.jpg" alt="M R SATHISH" class="profile-photo">
+        <div class="hero-content">
 
-    <p class="intro">HELLO, I'M</p>
+            <!-- UPDATED PROFILE PHOTO PATH -->
+            <img
+                src="./profile.jpeg"
+                alt="Profile photo of M R Sathish"
+                class="profile-photo"
+                width="180"
+                height="180"
+                fetchpriority="high"
+                onerror="this.onerror=null; this.alt='Profile photo unavailable';"
+            >
 
-     <h1>M R SATHISH</h1>
+            <p class="intro">HELLO, I'M</p>
+
+            <h1>M R SATHISH</h1>
 
             <h2>Aspiring Software Developer</h2>
 
@@ -177,6 +189,7 @@
                         <a
                             href="https://mrsathish915-bot.github.io/student-management-system/"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="project-btn">
                             Live Demo
                         </a>
@@ -184,6 +197,7 @@
                         <a
                             href="https://github.com/mrsathish915-bot/student-management-system"
                             target="_blank"
+                            rel="noopener noreferrer"
                             class="project-btn github-btn">
                             GitHub
                         </a>
@@ -210,6 +224,7 @@
             <a
                 href="https://leetcode.com/u/mr-sathish/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="profile-card">
                 🧩 LeetCode
             </a>
@@ -217,6 +232,7 @@
             <a
                 href="https://www.codechef.com/users/mr_sathish"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="profile-card">
                 🍴 CodeChef
             </a>
@@ -224,6 +240,7 @@
             <a
                 href="https://www.hackerrank.com/profile/mrsathish915"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="profile-card">
                 🏆 HackerRank
             </a>
@@ -231,6 +248,7 @@
             <a
                 href="https://www.hackerearth.com/@mrsathish915/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="profile-card">
                 🌍 HackerEarth
             </a>
@@ -252,20 +270,21 @@
 
         <div class="contact-links">
 
-            <a
-                href="mailto:mrsathish915@gmail.com">
+            <a href="mailto:mrsathish915@gmail.com">
                 📧 Email
             </a>
 
             <a
                 href="https://www.linkedin.com/in/m-r-sathish"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
                 💼 LinkedIn
             </a>
 
             <a
                 href="https://github.com/mrsathish915-bot"
-                target="_blank">
+                target="_blank"
+                rel="noopener noreferrer">
                 💻 GitHub
             </a>
 
@@ -287,4 +306,3 @@
 </body>
 
 </html>
-```
