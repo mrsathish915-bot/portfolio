@@ -1,308 +1,418 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>M R SATHISH | Portfolio</title>
+    <title>M R SATHISH | Aspiring Software Developer</title>
 
     <meta name="description"
-        content="M R Sathish's personal portfolio showcasing skills, projects, coding profiles and contact information.">
+        content="Portfolio of M R Sathish - Computer Science student specializing in programming, Data Structures & Algorithms, and modern web development.">
+    <meta name="author" content="M R Sathish">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="M R SATHISH | Developer Portfolio">
+    <meta property="og:description"
+        content="Computer Science student passionate about programming, problem solving, and web development.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#home" class="logo" aria-label="M R Sathish Home">
+                <span class="logo-accent">&lt;</span>M R SATHISH<span class="logo-accent"> /&gt;</span>
+            </a>
 
-    <header>
-        <nav class="navbar">
+            <div class="nav-wrapper">
+                <ul class="nav-links" id="nav-links" role="list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#profiles" class="nav-link">Profiles</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
 
-            <div class="logo">
-                M R SATHISH
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle light and dark theme" title="Toggle theme">
+                        <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    <button id="menu-toggle" class="icon-btn mobile-menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
             </div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#profiles">Profiles</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
         </nav>
     </header>
 
+    <main id="main-content">
 
-    <!-- ================= HOME ================= -->
-
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <!-- UPDATED PROFILE PHOTO PATH -->
-            <img
-                src="./profile.jpeg"
-                alt="Profile photo of M R Sathish"
-                class="profile-photo"
-                width="180"
-                height="180"
-                fetchpriority="high"
-                onerror="this.onerror=null; this.alt='Profile photo unavailable';"
-            >
-
-            <p class="intro">HELLO, I'M</p>
-
-            <h1>M R SATHISH</h1>
-
-            <h2>Aspiring Software Developer</h2>
-
-            <p class="hero-description">
-                Computer Science Student passionate about programming,
-                problem solving, web development and building real-world projects.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary-btn">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="section">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-content">
-
-            <p>
-                Hi! I'm <strong>M R SATHISH</strong>, a Computer Science student
-                and aspiring software developer.
-            </p>
-
-            <p>
-                I am currently developing my programming and problem-solving
-                skills while learning modern web development technologies.
-            </p>
-
-            <p>
-                I enjoy creating projects that help me understand programming
-                concepts and gain practical development experience.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills" class="section">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>HTML</h3>
-                <p>Web Structure</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>CSS</h3>
-                <p>Web Design</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Web Development</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Java</h3>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Programming</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>DSA</h3>
-                <p>Problem Solving</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-
-            <div class="project-card">
-
-                <div class="project-content">
-
-                    <h3>🎓 Student Management System</h3>
-
-                    <p>
-                        A responsive student management web application that
-                        allows users to add, edit, delete, search and manage
-                        student records.
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>LocalStorage</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a
-                            href="https://mrsathish915-bot.github.io/student-management-system/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-btn">
-                            Live Demo
-                        </a>
-
-                        <a
-                            href="https://github.com/mrsathish915-bot/student-management-system"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="project-btn github-btn">
-                            GitHub
-                        </a>
-
-                    </div>
-
+        <!-- ================= HERO ================= -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-image-wrapper">
+                    <img src="./profile.jpeg" alt="Photograph of M R Sathish" class="profile-photo" width="180" height="180" fetchpriority="high" onerror="this.onerror=null; this.alt='Profile photograph unavailable';">
+                    <span class="status-badge" title="Open to opportunities">
+                        <span class="status-dot"></span> Open to Roles
+                    </span>
                 </div>
 
+                <div class="hero-text-content">
+                    <p class="intro-tag">HELLO, I'M</p>
+                    <h1 class="hero-name">M R SATHISH</h1>
+                    <p class="hero-headline">Aspiring Software Developer</p>
+                    <p class="hero-description">
+                        Computer Science student passionate about core programming, algorithmic problem solving, and developing responsive, practical web applications.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore Projects
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Get in Touch
+                        </a>
+                    </div>
+
+                    <div class="hero-socials" aria-label="Verified profiles">
+                        <a href="https://github.com/mrsathish915-bot" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/m-r-sathish" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="mailto:mrsathish915@gmail.com" aria-label="Email M R Sathish">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 12.713L.014 3.015A2 2 0 0 1 2 2h20a2 2 0 0 1 1.986 1.015L12 12.713zm0 2.574L0 5.572V20a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V5.572L12 15.287z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag">PROFILE</span>
+                <h2 class="section-title">About Me</h2>
             </div>
 
-        </div>
+            <div class="about-grid">
+                <div class="about-card main-text">
+                    <p>
+                        I'm <strong>M R Sathish</strong>, an undergraduate Computer Science student driven by continuous learning and structured problem solving.
+                    </p>
+                    <p>
+                        My core focus centers on building a solid foundation in computer science fundamentals, mastering <strong>Data Structures & Algorithms</strong>, and engineering clean, accessible web interfaces.
+                    </p>
+                    <p>
+                        Through hands-on projects, I focus on applying practical software architecture patterns, writing clean code, and understanding client-side persistence and responsive user interfaces.
+                    </p>
+                </div>
 
-    </section>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
+                        <div>
+                            <h3>Academic Focus</h3>
+                            <p>Computer Science & Engineering fundamentals, core algorithms, and software development methodologies.</p>
+                        </div>
+                    </div>
 
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div>
+                            <h3>Continuous Problem Solving</h3>
+                            <p>Active practice across LeetCode, CodeChef, HackerRank, and HackerEarth to sharpen algorithmic thinking.</p>
+                        </div>
+                    </div>
 
-    <!-- ================= CODING PROFILES ================= -->
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <div>
+                            <h3>Practical Web Engineering</h3>
+                            <p>Designing lightweight, accessible, and structured user applications with vanilla web standards and persistent state.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="profiles" class="section">
+        <!-- ================= SKILLS ================= -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-tag">CAPABILITIES</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
 
-        <h2 class="section-title">Coding Profiles</h2>
+            <div class="skills-categorized-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="category-indicator"></span>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <ul class="skill-tags-list">
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">Java</span>
+                            <span class="skill-tag-sub">Object-Oriented Programming</span>
+                        </li>
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">Python</span>
+                            <span class="skill-tag-sub">Scripting & Logic</span>
+                        </li>
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">JavaScript</span>
+                            <span class="skill-tag-sub">ES6+ & Dynamic Web</span>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="profiles-container">
+                <!-- Problem Solving & Theory -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="category-indicator"></span>
+                        <h3>Algorithms & Theory</h3>
+                    </div>
+                    <ul class="skill-tags-list">
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">Data Structures & Algorithms</span>
+                            <span class="skill-tag-sub">Time & Space Complexity</span>
+                        </li>
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">Algorithmic Problem Solving</span>
+                            <span class="skill-tag-sub">Competitive Programming</span>
+                        </li>
+                    </ul>
+                </div>
 
-            <a
-                href="https://leetcode.com/u/mr-sathish/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="profile-card">
-                🧩 LeetCode
-            </a>
+                <!-- Web Frontend & Client Storage -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="category-indicator"></span>
+                        <h3>Frontend & Client Storage</h3>
+                    </div>
+                    <ul class="skill-tags-list">
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">HTML5</span>
+                            <span class="skill-tag-sub">Semantic & Accessible Markup</span>
+                        </li>
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">CSS3</span>
+                            <span class="skill-tag-sub">Responsive Layouts & Flexbox/Grid</span>
+                        </li>
+                        <li class="skill-tag">
+                            <span class="skill-tag-name">Web Storage API</span>
+                            <span class="skill-tag-sub">LocalStorage & Data Persistence</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <a
-                href="https://www.codechef.com/users/mr_sathish"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="profile-card">
-                🍴 CodeChef
-            </a>
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-tag">WORK</span>
+                <h2 class="section-title">Featured Project</h2>
+            </div>
 
-            <a
-                href="https://www.hackerrank.com/profile/mrsathish915"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="profile-card">
-                🏆 HackerRank
-            </a>
+            <div class="projects-wrapper">
+                <article class="featured-project-card">
+                    <div class="project-header-bar">
+                        <div class="window-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="project-category-badge">Web Application</span>
+                    </div>
 
-            <a
-                href="https://www.hackerearth.com/@mrsathish915/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="profile-card">
-                🌍 HackerEarth
-            </a>
+                    <div class="project-body">
+                        <h3 class="project-title">Student Management System</h3>
+                        
+                        <p class="project-summary">
+                            A production-ready, client-side web application engineered to manage student records efficiently. It features persistent storage, intuitive record modification, and instant search capabilities without requiring external server dependencies.
+                        </p>
 
-        </div>
+                        <div class="project-key-points">
+                            <h4>Key Implemented Features:</h4>
+                            <ul>
+                                <li>Complete CRUD Operations: Create, view, edit, and delete student records dynamically.</li>
+                                <li>Live Search & Filtering: Real-time queries to locate specific student entries instantly.</li>
+                                <li>Client-Side Data Persistence: Saves state using the browser's <code>localStorage</code> API.</li>
+                                <li>Adaptive UI: Responsive layout structured for desktop, tablet, and mobile browsers.</li>
+                            </ul>
+                        </div>
 
-    </section>
+                        <div class="project-tech-stack" aria-label="Technologies used">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript (ES6+)</span>
+                            <span class="tech-pill">LocalStorage API</span>
+                        </div>
 
+                        <div class="project-actions">
+                            <a href="https://mrsathish915-bot.github.io/student-management-system/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/mrsathish915-bot/student-management-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <!-- ================= CONTACT ================= -->
+        <!-- ================= CODING PROFILES ================= -->
+        <section id="profiles" class="section">
+            <div class="section-header">
+                <span class="section-tag">COMPETITIVE PROGRAMMING</span>
+                <h2 class="section-title">Coding Profiles</h2>
+            </div>
 
-    <section id="contact" class="section contact-section">
+            <div class="profiles-grid">
+                <a href="https://leetcode.com/u/mr-sathish/" target="_blank" rel="noopener noreferrer" class="profile-card">
+                    <div class="profile-card-top">
+                        <span class="profile-badge">LeetCode</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <p class="profile-handle">@mr-sathish</p>
+                    <p class="profile-desc">Algorithmic challenges & Data Structures practice</p>
+                </a>
 
-        <h2 class="section-title">Contact Me</h2>
+                <a href="https://www.codechef.com/users/mr_sathish" target="_blank" rel="noopener noreferrer" class="profile-card">
+                    <div class="profile-card-top">
+                        <span class="profile-badge">CodeChef</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <p class="profile-handle">@mr_sathish</p>
+                    <p class="profile-desc">Competitive programming contests & division rounds</p>
+                </a>
 
-        <p>
-            Feel free to connect with me through my social and coding profiles.
-        </p>
+                <a href="https://www.hackerrank.com/profile/mrsathish915" target="_blank" rel="noopener noreferrer" class="profile-card">
+                    <div class="profile-card-top">
+                        <span class="profile-badge">HackerRank</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <p class="profile-handle">@mrsathish915</p>
+                    <p class="profile-desc">Language proficiencies and core CS problem sets</p>
+                </a>
 
-        <div class="contact-links">
+                <a href="https://www.hackerearth.com/@mrsathish915/" target="_blank" rel="noopener noreferrer" class="profile-card">
+                    <div class="profile-card-top">
+                        <span class="profile-badge">HackerEarth</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <p class="profile-handle">@mrsathish915</p>
+                    <p class="profile-desc">Coding assessments & track challenges</p>
+                </a>
+            </div>
+        </section>
 
-            <a href="mailto:mrsathish915@gmail.com">
-                📧 Email
-            </a>
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-tag">CONNECT</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
 
-            <a
-                href="https://www.linkedin.com/in/m-r-sathish"
-                target="_blank"
-                rel="noopener noreferrer">
-                💼 LinkedIn
-            </a>
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <p>
+                        I am currently open to internship opportunities, collaborative student projects, and developer roles. Reach out via email or connect with me through my verified professional profiles below.
+                    </p>
+                </div>
 
-            <a
-                href="https://github.com/mrsathish915-bot"
-                target="_blank"
-                rel="noopener noreferrer">
-                💻 GitHub
-            </a>
+                <div class="contact-cards-grid">
+                    <a href="mailto:mrsathish915@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 12.713L.014 3.015A2 2 0 0 1 2 2h20a2 2 0 0 1 1.986 1.015L12 12.713zm0 2.574L0 5.572V20a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V5.572L12 15.287z"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">mrsathish915@gmail.com</span>
+                        </div>
+                    </a>
 
-        </div>
+                    <a href="https://www.linkedin.com/in/m-r-sathish" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">linkedin.com/in/m-r-sathish</span>
+                        </div>
+                    </a>
 
-    </section>
+                    <a href="https://github.com/mrsathish915-bot" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/mrsathish915-bot</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+    </main>
 
     <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <p>
-            © 2026 M R SATHISH | Portfolio
-        </p>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 M R Sathish. Built with semantic HTML, modern CSS, and vanilla JavaScript.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <span>Back to top</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </a>
+        </div>
     </footer>
 
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>
